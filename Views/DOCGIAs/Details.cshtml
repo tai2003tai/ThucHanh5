@@ -1,0 +1,91 @@
+﻿@model Library.Models.DOCGIA
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DOCGIA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LOAIDOCGIA.TenLoaiDG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAIDOCGIA.TenLoaiDG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoTenDG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoTenDG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CMND)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CMND)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiaChi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HashPass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HashPass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrangThai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrangThai)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaDG }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

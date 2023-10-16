@@ -1,0 +1,51 @@
+﻿@model Library.Models.MUONSACH
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MUONSACH</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DOCGIA.HoTenDG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOCGIA.HoTenDG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SACH.TrangThai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SACH.TrangThai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayDenHanTra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayDenHanTra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TinhTrang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TinhTrang)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
